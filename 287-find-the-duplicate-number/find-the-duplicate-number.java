@@ -10,11 +10,11 @@ class Solution {
         fast=nums[nums[fast]];
 
     }
-    slow=nums[0];
-     while(slow!=fast){
-        slow=nums[slow];
+   int  ptr=nums[0];
+     while(ptr!=fast){
+        ptr=nums[ptr];
         fast=nums[fast];
      }
-   return slow;
+   return ptr;
     }
 }
